@@ -1,0 +1,40 @@
+$mycol:#fff;
+$mycol2:rgb(216, 71, 128);
+$mycol3:rgb(15, 17, 22);
+$font: 'Raleway', sans-serif;
+@mixin flex_process{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex-box{
+    @include flex_process();
+}
+.inner{
+    width: 100%;
+    max-width: 1200px;
+    margin:0 auto;
+    text-align: center;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: $font;
+}
+html{
+    font-size: 16px;
+}
+@mixin button {
+    background-color:$mycol2;
+    border:none;
+    border-radius:6px;
+    color:$mycol;
+    font-family: $font;
+    cursor: pointer;
+}
+@import "navigation";
+@import "banner";
+@import "form-area";
+@import "footer";
+

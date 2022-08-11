@@ -1,0 +1,120 @@
+.pink-area{
+    background-color: $mycol2;
+    text-align: center;
+    padding:90px 0;
+    color:$mycol;
+    h1{
+        font-size: 2.8rem;
+        font-weight: 800;
+    }
+    p{
+        font-size: 1.3rem;
+        margin-top:10px;
+        margin-bottom: 60px;
+    }
+    .form-area{
+        .Name{
+            width:70%;
+            margin:0 auto;
+            margin-bottom: 20px;
+            input{
+                width: 100%;
+                height:50px;
+                border-radius: 5px;
+                border:none;
+                padding-left: 10px;
+                padding-top: 3px;
+                font-size: 1rem;
+                outline: none;
+            }
+        }
+        .Email{
+            width:70%;
+            margin:0 auto;
+            input{
+                width: 100%;
+                height:50px;
+                border-radius: 5px;
+                border:none;
+                margin-bottom: 20px;
+                padding-left: 10px;
+                padding-top: 3px;
+                font-size: 1rem;
+                outline: none;
+            }
+        }
+        .Message{
+            width:70%;
+            margin:0 auto;
+            textarea{
+                width:100%;
+                height:225px;
+                border-radius: 5px;
+                border:none;
+                margin-bottom: 20px;
+                padding-left: 10px;
+                padding-top: 20px;
+                font-size: 1rem;
+                outline: none;
+            }
+        }
+    }
+    button{
+        width:210px;
+        height:60px;
+        font-size:1.1rem;
+        font-weight: 600;
+        @include button;
+        border:1px solid $mycol;
+    }
+    button:hover{
+        background-color:palevioletred;
+        transition: 1s;
+    }
+}
+@media only screen and (max-width:768px){
+    .pink-area h1 {
+        font-size: 2.3rem;
+    }
+    .pink-area p {
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (max-width:425px){
+    .pink-area h1 {
+        font-size: 1.7rem;
+    }
+    .pink-area p {
+        font-size: 0.9rem;
+    }
+    .pink-area button {
+        width: 180px;
+        height: 50px;
+        font-size: 0.9rem;
+    }
+    .pink-area .form-area .Name input {
+        height: 40px;
+        font-size: 0.8rem;
+    }
+    .pink-area .form-area .Email input {
+        height: 40px;
+        font-size: 0.8rem;
+    }
+    .pink-area .form-area .Message textarea {
+        height: 180px;
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 375px){
+    .pink-area h1 {
+        font-size: 1.3rem;
+    }
+    .pink-area p {
+        font-size: 0.7rem;
+    }
+    .pink-area button {
+        width: 150px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+}

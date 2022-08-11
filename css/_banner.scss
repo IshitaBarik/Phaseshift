@@ -1,0 +1,246 @@
+.Big-wrapper{
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment:fixed;
+    .Banner-1 p{
+        font-size: 1.75rem;
+        font-weight: 300;
+        color:$mycol;
+        padding:90px 70px 25px;
+        line-height: 50px;
+    }
+    .Banner-1 a{
+        color: $mycol;
+    }
+    .pink-button{
+        width:253px;
+        height:65px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        @include button();
+        margin-bottom: 90px;
+    }
+    .pink-button:hover , button:hover{
+        background-color: rgb(253, 119, 163);
+        transition: 1s;
+    }
+    .Images-1{
+        width:31%;
+        background-color: $mycol;
+        margin-bottom: 40px;
+        border-radius: 5px;
+    }
+    .details{
+        padding: 50px 25px;
+    }
+    .Images-1 p{
+        font-size: 1rem;
+        line-height: 30px;
+        font-weight: 200;
+    }
+    img{
+        width:100%;
+    }
+    button{
+        width:170px;
+        height:55px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        @include button();
+        margin-top:25px;
+    }
+    .icon-area{
+        text-align: left;
+        color:$mycol;
+        padding-bottom: 80px;
+        .icon-1{
+            width:47%;
+            .fa{
+                font-size: 3rem;
+                margin-right: 40px;
+            }
+            p{
+                margin-left: 85px;
+                line-height: 30px;
+                margin-top:20px;
+                margin-bottom: 30px;
+            }
+            h2{
+                font-size: 2rem;
+            }
+            .icn.border{
+                border-bottom: 1px solid $mycol;
+                margin-bottom: 30px;
+            }
+        }
+        .icon-2{
+            width:47%;
+            .fa{
+                font-size: 3rem;
+                margin-right: 40px;
+            }
+            p{
+                line-height: 30px;
+                margin-top:20px;
+                margin-left: 90px;
+                margin-bottom: 30px;
+            }
+            h2{
+                font-size: 2rem;
+            }
+            .icn-2.border{
+                border-bottom: 1px solid $mycol;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:1200px){
+    .img {
+        padding: 0 50px;
+    }
+    .icon-1 , .icon-2{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width:1089px){
+    .Big-wrapper .icon-area .icon-1 h2 {
+        font-size: 1.8rem;
+    }
+    .Big-wrapper .icon-area .icon-2 h2 {
+        font-size: 1.8rem;
+    }
+    .icon-1 , .icon-2{
+        padding: 0 15px;
+    }
+}
+@media only screen and (max-width:1025px){
+    .icon-1 , .icon-2{
+        padding: 0 23px;
+    }
+}
+
+@media only screen and (max-width:897px){
+    .img.flex-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Big-wrapper .icon-area .icon-1 .icn.border-2{
+        border-bottom: 1px solid #fff;
+        margin-bottom: 30px;
+    }
+    .Images-1{
+        width:70px;
+    }
+    .Big-wrapper .Images-1{
+        width:70%;
+    }
+    .Big-wrapper .icon-area .icon-1 h2 {
+        font-size: 1.6rem;
+    }
+    .Big-wrapper .icon-area .icon-2 h2 {
+        font-size: 1.6rem;
+    }
+    .Big-wrapper .Banner-1 p {
+        font-size: 1.4rem;
+    }
+    .Big-wrapper .pink-button {
+        width: 500px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+    .Big-wrapper button {
+        width: 400px;
+    }
+    .Big-wrapper .icon-area.flex-box {
+        display: block;
+        justify-content: center;
+        .icon-1 , .icon-2{
+            width: 100%;
+        }
+    }
+}
+@media  only screen and(max-width:735px){
+    .Big-wrapper button {
+        width: 300px;
+    }
+}
+@media  only screen and(max-width:589px){
+    .Big-wrapper .Images-1 {
+        width: 90%;
+    }
+    .Big-wrapper button {
+        width: 200px;
+    }
+    .Big-wrapper .pink-button{
+        width:420px;
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (max-width:425px){
+    .Big-wrapper .Banner-1 p {
+        font-size: 1.1rem;
+        padding: 60px 10px 25px;
+    }    
+    .Big-wrapper button {
+        width: 200px;
+        height:45px;
+    }
+    .Big-wrapper .Images-1 p {
+        font-size: 0.80rem;
+        line-height: 20px;
+    }
+    .Big-wrapper .details {
+        padding: 35px 25px;
+    }
+    .Big-wrapper .pink-button {
+        width: 270px;
+        height: 50px;
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width:391px){
+    .Big-wrapper .Banner-1 p {
+        font-size: 1rem;
+        padding: 30px 35px 0;
+    }
+    .Big-wrapper .pink-button {
+        height: 40px;
+        font-size: 1.1rem;
+    }
+    .icon-1, .icon-2 {
+        padding: 0 20px;
+    }
+}
+@media only screen and (max-width:320px){
+    .Big-wrapper .Banner-1 p {
+        font-size: 0.8rem;
+        line-height: 30px;
+        padding: 30px 35px 0;
+    }
+    .Big-wrapper .details {
+        padding: 30px 15px;
+    }
+    .Big-wrapper .pink-button {
+        font-size: 1rem;
+    }
+    .Big-wrapper button {
+        width:160px;
+        height:40px;
+        font-size: 0.9rem;
+    }
+    .Big-wrapper .icon-area .icon-1 h2 , .Big-wrapper .icon-area .icon-2 h2 {
+        font-size: 1.4rem;
+    }
+    .icon-1, .icon-2 {
+        padding: 0px 5px;
+    }
+    .Big-wrapper .Images-1 {
+        width: 100%;
+    }
+}
